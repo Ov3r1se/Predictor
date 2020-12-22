@@ -6,16 +6,16 @@
 //сделать отдельный предсказатель только с процентной вероятностью
 //добавить звук на кнопку
 //запретить ввод цифр и знаков
+//сделать подсветку выводимых ответов зеленым или красным
+//сделать регистрацию
+//сделать 3 попытки ответа,затем сменить вопрос
 
 let variants = ['полюбэ', 'нет', "100%", "несомненно", "да", "большая вероятность" ]
-let answ = variants[(Math.floor(Math.random() * (variants.length)))];
-
-
 
 
 function myFunction() {
 
-	let answ = variants[(Math.floor(Math.random() * (variants.length)))];
-	document.getElementById("answer").innerHTML = answ;
+    let answ = variants[(Math.floor(Math.random() * (variants.length)))];
+    document.getElementById("answer").innerHTML = answ;
 }
 

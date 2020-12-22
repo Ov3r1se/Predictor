@@ -15,8 +15,9 @@ body{
 	background-color: yellow;
 	border-radius: 20px;
 	font-size: 20px;
-	margin-top: 200px;
-	
+	margin-top: 70px;
+	border-color: black;
+	border-size: 3px;
 }
 
 #answer{
@@ -25,5 +26,10 @@ body{
 }
 
 #button{
-	margin-top: 20px;
+	background-color:green;
+}
+
+#welcome{
+	color:orange;
+	margin-top: 135px;
 }
