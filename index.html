@@ -2,6 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" href="style.css">
 	
 	<title>predictor</title>
@@ -9,22 +10,24 @@
 <script src="script.js"></script>
 <body>
 	<div id="welcome">
-		<p>Привет, это твой предсказатель.</p>
-	    <p>Произнеси вопрос или напиши его ниже, чтобы звезды дали тебе ответ..</p>
+		<p>Йоу землянин👋👽, это твой предсказатель.</p>
+	    <p>Произнеси вопрос или напиши его ниже, чтобы звезды дали тебе ответ...</p>
 	</div>
 
 
 <form>
    <p><input id="question" 
-   			 name="question" 
-   			 placeholder="Твой вопрос">
+   			 type="text" 
+   			 autocomplete="off"
+   			 placeholder="Твой вопрос"
+   			 onkeypress="noDigits(event)">
    </p>
 
    <p><input type="button"
    	 		 value="Спросить"
    	 		 onclick="myFunction()"
-   	 		 id="button">
-   </p>
+   	 		 id="buttonQuestion">
+  </p>
 </form>
 
 <p id="answer"> </p>
