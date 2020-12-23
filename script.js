@@ -1,21 +1,24 @@
 //замутить кнопку с подсказками возможных вопросов
-//запретить отвечать с пустым полем
 //добавить время на страницу
 //сделать вариант выбора из нескольких вводимых вариантов
-//сделать другие шрифты
+//сделать другие шрифты +
 //сделать отдельный предсказатель только с процентной вероятностью
 //добавить звук на кнопку
-//запретить ввод цифр и знаков
+//запретить ввод цифр (+) и знаков
+//сделать регистрацию
+//замутить анимацию на фон
 
-let variants = ['полюбэ', 'нет', "100%", "несомненно", "да", "большая вероятность" ]
-let answ = variants[(Math.floor(Math.random() * (variants.length)))];
 
-
+let variants = ['полюбэ', '100%', "да", "естественно","разумеется", "большая вероятность", "нет"]
 
 
 function myFunction() {
 
-	let answ = variants[(Math.floor(Math.random() * (variants.length)))];
-	document.getElementById("answer").innerHTML = answ;
+    let answ = variants[(Math.floor(Math.random() * (variants.length)))];
+    document.getElementById("answer").innerHTML = answ;
 }
 
+function noDigits(event) {
+  if ("1234567890".indexOf(event.key) != -1)
+    event.preventDefault();
+}
